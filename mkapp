@@ -37,7 +37,7 @@ tail -10 debian/control
 echo "scp /usr/bin" >> debian/dropbear-scp.install
 
 sed -i -e '1p' debian/changelog
-sed -i -e '1s/)/+peramic0)/' -e "2i\\\n\\n  * Enables scp\\n\\n -- peraMIC <opensource@peraMIC.io>  \$(date -R)\\n" debian/changelog
+sed -i -e '1s/)/+menucha0)/' -e "2i\\\n\\n  * Enables scp\\n\\n -- Menucha Team <info@menucha.de>  \$(date -R)\\n" debian/changelog
 head -6 debian/changelog
 
 cd -
