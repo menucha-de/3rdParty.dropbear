@@ -18,7 +18,7 @@ jobs:
       - name: Check out
         uses: actions/checkout@v2
       - name: Publish package
-        uses: peramic/actions/build-stretch@v1
+        uses: menucha-de/actions/build-stretch@v1
         if: ${{ github.event.inputs.dist == 'stretch' }}
         with:
           arch: ${{ github.event.inputs.arch }}
@@ -26,7 +26,7 @@ jobs:
           script: ./mkapp
           token: ${{ secrets.ACTIONS }}
       - name: Publish package
-        uses: peramic/actions/build@v1
+        uses: menucha-de/actions/build@v1
         if: ${{ github.event.inputs.dist == 'buster' }}
         with:
           arch: ${{ github.event.inputs.arch }}
